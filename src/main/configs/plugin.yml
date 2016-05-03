@@ -1,0 +1,14 @@
+############################################################
+# +------------------------------------------------------+ #
+# |             BanterFreedomMod: Remastered             | #
+# |                      plugin.yml                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+name: CraftedFreedomNetwork
+main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
+version: Remastered
+description: Plugin for a FreedomServer!
+softdepend: [BukkitTelnet, WorldEdit, Essentials, BarAPI, Spigot, Votifier]
+authors: [__Crafted]
+

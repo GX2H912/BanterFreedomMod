@@ -1,0 +1,277 @@
+############################################################
+# +------------------------------------------------------+ #
+# |             BanterFreedomMod: Remastered             | #
+# |                      config.yml                      | #
+# |                  Made by: __Crafted                  | #
+# +------------------------------------------------------+ #
+############################################################
+
+server_info:
+  server_name: BanterFreedom
+  server_subdomain: banterfreedom.fadehost.com
+  server_motd: Welcome to BanterFreedom Remastered!
+  kickmsg: You have been kicked from BanterFreedom!
+  
+  url_service: http://status.mojang.com/check
+  url_bans: http://banterfreedom.boards.net/
+  url_permbans: http://banterfreedom.boards.net/
+
+############################################################
+# +------------------------------------------------------+ #
+# |                Admin Configeration                   | #
+# +------------------------------------------------------+ #
+############################################################
+
+admins:
+  admin_only_mode: false
+  console_is_senior: true
+  noadmin_ips:
+      - 167.114.97.16
+  banterfreedom_owner:
+      - BanterousSor
+  host_sender_names:
+      - rcon
+      - remotebukkit
+
+############################################################
+# +------------------------------------------------------+ #
+# |                Blocked Commands                      | #
+# +------------------------------------------------------+ #
+############################################################
+commands:
+  - 'n:b:/time:&eFreedom > Try using /ptime'
+  - 'n:b:/gamemode:&eFreedom > Try using /gmc /gms, /gma or /gmsp. You can also use /creative and /survival'
+  - 'n:b:/pardon:&eFreedom > Unknown Command'
+  - 'n:b:/ban-ip:&eFreedom > Unknown Command'
+  - 'n:b:/toggledownfall:&eFreedom > Unknown Command'
+  - 'n:b:/effect:&eFreedom > Try using /potion'
+  - 'n:b:/enderchest:&eFreedom > Unknown Command'
+  - 'n:b:/spreadplayers:&eFreedom > Unknown Command'
+  - 'n:b:/execute:&eFreedom > Unknown Command'
+  - 'n:b:/blockdata:&eFreedom > Unknown Command'
+  - 'n:b:/clearhistory:&eFreedom > Unknown Command'
+  - 'n:b:/save-all:&eFreedom > Unknown Command'
+  - 'n:b:/save-on:&eFreedom > Unknown Command'
+  - 'n:b:/save-off:&eFreedom > Unknown Command'
+  - 'n:b:/saconfig:&eFreedom > Try using /admin'
+  - 'n:b:/gamerule:&eFreedom > Unknown command'
+  - 'n:b:/togglejail:&eFreedom > Unknown command'
+  - 'n:b:/difficulty:&eFreedom > Unknown Command'
+  - 's:b:/kick:&eFreedom > Unknown Command'
+  - 's:b:/ban:&eFreedom > Why do you want to ban your self?'
+  - 's:b:/socialspy:&eFreedom > Unknown Command'
+  - 's:b:/kill:&eFreedom > Unknown Command'
+  - 's:b://generate:&eFreedom > Unknown Command'
+  - 's:b://:&eFreedom > Unknown Command'
+  - 's:b:/superpickaxe:&eFreedom > Unknown Command'
+  - 's:b:/brush:&eFreedom > Unknown Command'
+  - 's:b:/size:&eFreedom > Unknown Command'
+  - 's:b://mask:&eFreedom > Unknown Command'
+  - 's:b:/mat:&eFreedom > Unknown Command'
+  - 's:b://butcher:&eFreedom > Unknown Command'
+  - 's:b:/scoreboard:&eFreedom > Unknown Command'
+  - 's:b:/setspawn:&eFreedom > Unknown Command'
+  - 's:b://snow:&eFreedom > Unknown Command'
+  - 's:b:/tellraw:&eFreedom > Unknown Command'
+  - 's:b:/forestgen:&eFreedom > Unknown Command'
+  - 's:b:/setidletimeout:&eFreedom > Unknown Command'
+  - 's:b:/mail sendall:&eFreedom > Unknown Command'
+  - 's:b:/eco reset:&eFreedom > Unknown Command'
+  - 's:b:/mask:&eFreedom > Unknown Command'
+  - 's:b:/gmask:&eFreedom > Unknown Command'
+  - 's:b:/lrbuild:&eFreedom > Unknown Command'
+  - 's:b:/defaultgamemode:&eFreedom > Unknown Command'
+  - 's:b:/reload:&eFreedom > Unknown Command'
+  - 's:b:/title:&eFreedom > Unknown Command'
+  - 's:b:/worldborder:&eFreedom > Unknown Command'
+  - 's:b:/weather:&eFreedom > Unknown Command'
+  - 's:b:/tpall:&eFreedom > Unknown Command'
+  - 's:b:/setblock:&eFreedom > Unknown Command'
+  - 's:b:/green:&eFreedom > Unknown Command'
+  - 's:a:/stop:&eFreedom > Unknown Command'
+  - 's:a:/restart:&eFreedom > Unknown Command'
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 Server Announcements                 | #
+# +------------------------------------------------------+ #
+############################################################
+announcer:
+  enabled: true
+  interval: 200
+  prefix: '&8[&4BanterFreedom: Remastered&8] &e'
+  announcements:
+    - 'Be sure to visit our forums at &9http://banterfreedom.boards.net/'
+    - '&4&lWelcome to BanterFreedom: Remastered'
+    - '&4&lBanterFreedomMod: Remastered is all most done!'
+    - 'Want to talk with other players on our server? Join our Discord: &9https://discord.gg/0x6udfZJGBpomKRO'
+    - 'If you forgot our fourms do "&9/website&e" to view the link!'
+    - 'If you have not been OP ask an friendly admin to do /opall!'
+    - 'Somebody breaking the rules?  Report it!  &4/report <user> <reason>'
+    - 'Griefing is not allowed!'
+    - 'Hacking is allowed!'
+    - 'Huge World-Edits results in getting &cPerm-Banned&e!'
+    - 'EndPortal Grief results in getting &cPerm-Banned&e!'
+    - 'Not added to Admin? PM __Crafted on the fourms to get added back to admin!'
+    - 'Interested in becoming admin here on banterfreedom? Do "&9/admininfo&e" for more information!'
+    - 'You may view all online administrators via "/list -a"'
+    - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
+    - 'BantorerousSor is the &9Founder&e of BanterFreedom!'
+    - '__Crafted is the BanterFreedomMod &5Lead-Developer&e!'
+    - 'Server lagging?  Check the lag via "/tps" or alternatively "/health"'
+    - 'Player vs Player while in creative/god mode it forbidden!'
+    - 'Spawn killing is &cNOT-ALLOWED&e!'
+    - 'Invisible potions are &aALLOWED&e!'
+    - 'Serial griefing and trolling will result in getting &cperm-banned&e!'
+    - 'BanterFreedom accepts donations just PM __Crafted on &6http://banterfreedom.boards.net!'
+    - 'Racism, Nazism, and Sexism is strictly forbidden!'
+
+############################################################
+# +------------------------------------------------------+ #
+# |             Famous Players Configeration             | #
+# +------------------------------------------------------+ #
+############################################################
+famous_usernames:
+  - honeydew
+  - xephos
+  - captainsparklez
+  - truemu
+  - kiershar
+  - fvdisco
+  - sethbling
+  - notch
+  - jeb_
+  - gamechap
+  - bertiechap
+  - vechs
+  - antvenom
+  - chimneyswift
+  - deadmau5
+  - etho
+  - ethoslab
+  - skydoesminecraft
+  - skythekidrs
+  - tobyturner
+  - xxslyfoxhoundxx
+  - paulsoaresjr
+  - sips_
+  - deadlox
+  - xxslyxx
+  - jeromeasf
+  - dinnerbone
+  - grumm
+  - grum
+  - evilseph
+  - cavemanfilms
+  - herobrine
+  - whiteboy7thst
+  - stampylonghead
+  - stampylongnose
+  - dantdm
+  - gizzy14gazza
+  - markbyron
+  - prozza
+  - savage
+  - ssundee
+  - hello
+  - thediamondminecart
+  - thecampingrusher
+  - noob
+  - scrub
+  - 1234
+  - ddoslol
+  - anonymous
+  - hacker
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      AutoKicker                      | #
+# +------------------------------------------------------+ #
+############################################################
+autokick:
+  enabled: true
+  threshold: 0.9
+  time: 120
+
+############################################################
+# +------------------------------------------------------+ #
+# |               Server Protection                      | #
+# +------------------------------------------------------+ #
+############################################################
+protection:
+  generate: true
+  generate_params: 3,bedrock,16,stone,32,dirt,1,grass
+  enabled: true
+  auto_protect_spawnpoints: true
+  auto_protect_radius: 25.0
+  enabled: true
+  count_break: 100
+  count_place: 40
+  range: 10.0
+  freecam_trigger_count: 10
+  explosive_radius: 4.0
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Toggles                        | #
+# +------------------------------------------------------+ #
+############################################################
+toggles:
+  fire_place: false
+  fire_spread: false
+  fluid_spread: false
+  lava_place: false
+  lava_damage: false
+  water_place: false
+  tnt_minecarts: false
+  explosions: false  
+  auto_wipe: true
+  colorful_motd: true
+  training_mode: false
+  preprocess_log: true
+  landmines_enabled: false
+  mp44_enabled: false
+  tossmob_enabled: false
+  night: true
+  weather: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       ForceIP                        | #
+# +------------------------------------------------------+ #
+############################################################
+forceip:
+  enabled: false
+  port: 25565
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                         Mobs                         | #
+# +------------------------------------------------------+ #
+############################################################
+mobs:
+  enabled: true
+  max: 50
+  disable:
+    dragon: true
+    ghast: true
+    slime: true
+    giant: true
+  pets_enabled: true
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                      Disabled                        | #
+# +------------------------------------------------------+ #
+############################################################
+not_used_config:
+  enabled: false
+  url: ''
+  secret: ''
+  url: ''
+  secret: ''
+  enabled: true
+  port: 28966
+  public_folder: ./public_html
+  overlord_ips:
+      - perm.disabled.command.poof
