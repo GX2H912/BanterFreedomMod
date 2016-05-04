@@ -5,7 +5,7 @@
 # +------------------------------------------------------+ #
 ############################################################
 
-name: CraftedFreedomNetwork
+name: BanterFreedomMod
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
 version: Remastered
 description: Plugin for a FreedomServer!

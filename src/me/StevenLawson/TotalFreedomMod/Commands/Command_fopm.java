@@ -16,14 +16,7 @@ public class Command_fopm extends TFM_Command
 
         playerMsg("Welcome to the FreedomOpMod; our server's main plugin!", ChatColor.GOLD);
         playerMsg("Created by Camzie99", ChatColor.GOLD);
-        StringBuilder developers = new StringBuilder();
-        developers.append("Later worked on by: CrafterSmith12");
-        for (String dev : TFM_Util.FOP_DEVELOPERS)
-        {
-            developers.append(", " + dev);
-        }
-        developers.append(".");
-        playerMsg(developers.toString(), ChatColor.AQUA);
+        playerMsg("Later Worked on by: CrafterSmith12");
         playerMsg("This plugin no longer exists, but you can find FOPM:Remastered forums at http://fop.us.to/!", ChatColor.GREEN);
 
         return true;

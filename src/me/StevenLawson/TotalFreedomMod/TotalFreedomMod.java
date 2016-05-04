@@ -41,7 +41,7 @@ public class TotalFreedomMod extends JavaPlugin
     public static final long SERVICE_CHECKER_RATE = 120L;
     public static final int MAX_USERNAME_LENGTH = 20;
     //
-    public static final String CONFIG_FILENAME = "config.yml";
+    public static final String CONFIG_FILENAME = "crafted_config.yml";
     public static final String SUPERADMIN_FILENAME = "admin.yml";
     public static final String PERMBAN_FILENAME = "permban.yml";
     public static final String DONATOR_FILENAME = "donators.yml";
@@ -54,7 +54,7 @@ public class TotalFreedomMod extends JavaPlugin
     //
     public static String buildNumber = "1";
     public static String buildDate = TotalFreedomMod.buildDate = TFM_Util.dateToString(new Date());
-    public static String buildCreator = "Unknown";
+    public static String buildCreator = "__Crafted";
     //
     public static Server server;
     public static TotalFreedomMod plugin;

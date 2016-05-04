@@ -30,7 +30,6 @@ import me.StevenLawson.TotalFreedomMod.TFM_Util;
 import me.StevenLawson.TotalFreedomMod.TFM_UuidManager;
 import me.StevenLawson.TotalFreedomMod.TotalFreedomMod;
 import me.StevenLawson.TotalFreedomMod.World.TFM_AdminWorld;
-import net.camtech.camutils.CUtils_Methods;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -969,7 +968,7 @@ public class TFM_PlayerListener implements Listener
                 TFM_Util.bcastMsg("Admins, tell him to verify!", ChatColor.RED);
             }
         }
-        else if (TFM_AdminList.isSuperAdmin(player) || TFM_Util.DEVELOPERS.contains(player.getName()))
+        else if (TFM_AdminList.isSuperAdmin(player) || TFM_Util.RF_DEVELOPERS.contains(player))
         {
             TFM_Util.bcastMsg(ChatColor.BLUE + player.getName() + " is " + TFM_PlayerRank.getLoginMessage(player));
         }
@@ -980,7 +979,7 @@ public class TFM_PlayerListener implements Listener
         {
             TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
             player.setPlayerListName(ChatColor.DARK_PURPLE + name);
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5TF-Developer&8]");
             afterNameSet(player);
             return;
         }
@@ -994,11 +993,18 @@ public class TFM_PlayerListener implements Listener
                 afterNameSet(player);
                 return;
             }
-            if (TFM_Util.FOP_DEVELOPERS.contains(name))
+            if (TFM_ConfigEntry.TELNET_MULTI_ADMIN.getList().contains(name))
+            {
+                player.setPlayerListName(ChatColor.GREEN + name);
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&2Telnet Muli Admin&8]");
+                afterNameSet(player);
+                return;
+            }
+            if (TFM_Util.DEVELOPERS.contains(name))
             {
                 TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
                 player.setPlayerListName(ChatColor.DARK_PURPLE + name);
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&5&lFOP-Developer&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
                 afterNameSet(player);
                 return;
             }
@@ -1044,7 +1050,7 @@ public class TFM_PlayerListener implements Listener
             {
                 TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
                 player.setPlayerListName(ChatColor.DARK_GREEN + name);
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&2STA&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&aSTA&8]");
                 afterNameSet(player);
             }
             else

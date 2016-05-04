@@ -10,17 +10,20 @@ server_info:
   server_name: BanterFreedom
   server_subdomain: banterfreedom.fadehost.com
   server_motd: Welcome to BanterFreedom Remastered!
-  kickmsg: You have been kicked from BanterFreedom!
+  server_kickmsg: You have been kicked from BanterFreedom!
   
-  url_service: http://status.mojang.com/check
+# +------------------------------------------------------+ #
+# |                   In-Game URLS                       | #
+# +------------------------------------------------------+ #
+
+urls:
+  url_minecraft_service: http://status.mojang.com/check
   url_bans: http://banterfreedom.boards.net/
   url_permbans: http://banterfreedom.boards.net/
 
-############################################################
 # +------------------------------------------------------+ #
 # |                Admin Configeration                   | #
 # +------------------------------------------------------+ #
-############################################################
 
 admins:
   admin_only_mode: false
@@ -29,16 +32,17 @@ admins:
       - 167.114.97.16
   banterfreedom_owner:
       - BanterousSor
+  telnet_multi_admins:
+      - None123
   host_sender_names:
       - rcon
       - remotebukkit
 
-############################################################
 # +------------------------------------------------------+ #
-# |                Blocked Commands                      | #
+# |                      Commands                        | #
 # +------------------------------------------------------+ #
-############################################################
-commands:
+
+freedom_b_commands:
   - 'n:b:/time:&eFreedom > Try using /ptime'
   - 'n:b:/gamemode:&eFreedom > Try using /gmc /gms, /gma or /gmsp. You can also use /creative and /survival'
   - 'n:b:/pardon:&eFreedom > Unknown Command'
@@ -91,15 +95,14 @@ commands:
   - 's:a:/stop:&eFreedom > Unknown Command'
   - 's:a:/restart:&eFreedom > Unknown Command'
 
-############################################################
 # +------------------------------------------------------+ #
-# |                 Server Announcements                 | #
+# |                      Announcer                       | #
 # +------------------------------------------------------+ #
-############################################################
+
 announcer:
   enabled: true
   interval: 200
-  prefix: '&8[&4BanterFreedom: Remastered&8] &e'
+  prefix: '&8[&4BanterFreedom: R&8] &e'
   announcements:
     - 'Be sure to visit our forums at &9http://banterfreedom.boards.net/'
     - '&4&lWelcome to BanterFreedom: Remastered'
@@ -126,12 +129,11 @@ announcer:
     - 'BanterFreedom accepts donations just PM __Crafted on &6http://banterfreedom.boards.net!'
     - 'Racism, Nazism, and Sexism is strictly forbidden!'
 
-############################################################
 # +------------------------------------------------------+ #
-# |             Famous Players Configeration             | #
+# |                Famous Players Config                 | #
 # +------------------------------------------------------+ #
-############################################################
-famous_usernames:
+
+famous_minecraft_players:
   - honeydew
   - xephos
   - captainsparklez
@@ -178,26 +180,22 @@ famous_usernames:
   - thecampingrusher
   - noob
   - scrub
-  - 1234
-  - ddoslol
   - anonymous
   - hacker
 
-############################################################
 # +------------------------------------------------------+ #
 # |                      AutoKicker                      | #
 # +------------------------------------------------------+ #
-############################################################
-autokick:
+
+autokicker:
   enabled: true
   threshold: 0.9
   time: 120
 
-############################################################
 # +------------------------------------------------------+ #
-# |               Server Protection                      | #
+# |                 Server Protection                    | #
 # +------------------------------------------------------+ #
-############################################################
+
 protection:
   generate: true
   generate_params: 3,bedrock,16,stone,32,dirt,1,grass
@@ -211,11 +209,10 @@ protection:
   freecam_trigger_count: 10
   explosive_radius: 4.0
 
-############################################################
 # +------------------------------------------------------+ #
 # |                       Toggles                        | #
 # +------------------------------------------------------+ #
-############################################################
+
 toggles:
   fire_place: false
   fire_spread: false
@@ -235,20 +232,19 @@ toggles:
   night: true
   weather: true
 
-############################################################
 # +------------------------------------------------------+ #
 # |                       ForceIP                        | #
 # +------------------------------------------------------+ #
-############################################################
+
 forceip:
   enabled: false
   port: 25565
   
-############################################################
+
 # +------------------------------------------------------+ #
 # |                         Mobs                         | #
 # +------------------------------------------------------+ #
-############################################################
+
 mobs:
   enabled: true
   max: 50
@@ -258,13 +254,12 @@ mobs:
     slime: true
     giant: true
   pets_enabled: true
-  
-############################################################
+
 # +------------------------------------------------------+ #
 # |                      Disabled                        | #
 # +------------------------------------------------------+ #
-############################################################
-not_used_config:
+
+disabled:
   enabled: false
   url: ''
   secret: ''

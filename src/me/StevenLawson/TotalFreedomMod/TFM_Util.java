@@ -68,12 +68,11 @@ public class TFM_Util
 {
     private static final Map<String, Integer> ejectTracker = new HashMap<String, Integer>();
     public static final Map<String, EntityType> mobtypes = new HashMap<String, EntityType>();
-    // See https://github.com/TotalFreedom/License - TotalFreedomMod Developers for credit!
-    // FreedomOP is gone for an huge ammount of time so we keep there names for credit!
+    // See https://github.com/TotalFreedom/License - moved to config.yml (Non-Copyright)
+    // FreedomOP is gone and so developers
     // This Mod Uses stuff from RubyFreedomMod!
     // There is no other developer on BanterFreedom, Crafted is the only Developer!
-    public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "Prozza", "DarthSalmon", "AcidicCyanide", "Wild1145", "WickedGamingUK");
-    public static final List<String> FOP_DEVELOPERS = Arrays.asList("Paldiu", "xDestroyer217", "Freelix2000", "Cyro1999");
+    public static final List<String> DEVELOPERS = Arrays.asList("Prozza");
     public static final List<String> RF_DEVELOPERS = Arrays.asList("Valencia_Orange", "AwesomePinch");
     public static final List<String> EXECUTIVES = Arrays.asList("");
     public static final List<String> SYS = Arrays.asList("");

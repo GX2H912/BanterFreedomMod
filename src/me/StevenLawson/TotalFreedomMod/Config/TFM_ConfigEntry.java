@@ -4,9 +4,10 @@ import java.util.List;
 
 public enum TFM_ConfigEntry
 {
+    // Note this is the "config.yml" listener file
+    // Don't fuck this up again!
     FORCE_IP_ENABLED(Boolean.class, "forceip.enabled"),
     FORCE_IP_PORT(Integer.class, "forceip.port"),
-    FORCE_IP_KICKMSG(String.class, "forceip.kickmsg"),
     //
     ALLOW_EXPLOSIONS(Boolean.class, "toggles.explosions"),
     ALLOW_FIRE_PLACE(Boolean.class, "toggles.fire_place"),
@@ -35,6 +36,7 @@ public enum TFM_ConfigEntry
     ENABLE_PET_PROTECT(Boolean.class, "mobs.pets_enabled"),
     //
     SERVER_OWNERS(List.class, "admins.banterfreedom_owner"),
+    TELNET_MULTI_ADMIN(List.class, "admins.telnet_multi_admins"),
     NOADMIN_IPS(List.class, "admins.noadmin_ips"),
     ADMIN_ONLY_MODE(Boolean.class, "admins.admin_only_mode"),
     CONSOLE_IS_SENIOR(Boolean.class, "admins.console_is_senior"),
@@ -42,19 +44,22 @@ public enum TFM_ConfigEntry
     //
     SERVER_NAME(String.class, "server_info.server_name"),
     SERVER_ADDRESS(String.class, "server_info.server_subdomain"),
-    SERVER_MOTD(String.class, "server_info.motd"),
-    SERVER_BAN_URL(String.class, "server_info.url_bans"),
-    SERVER_PERMBAN_URL(String.class, "server_info.url_permbans"),
+    SERVER_MOTD(String.class, "server_info.server_motd"),
+    FORCE_IP_KICKMSG(String.class, "server_info.kickmsg"),
     //
-    TWITTERBOT_ENABLED(Boolean.class, "not_used_config.enabled"),
-    TWITTERBOT_SECRET(String.class, "not_used_config.secret"),
-    OVERLORD_IPS(List.class, "not_used_config.overlord_ips"),
-    TWITTERBOT_URL(String.class, "not_used_config.url"),
-    HTTPD_ENABLED(Boolean.class, "not_used_config.enabled"),
-    HTTPD_PORT(Integer.class, "not_used_config.port"),
-    HTTPD_PUBLIC_FOLDER(String.class, "not_used_config.public_folder"),
-    LOGS_SECRET(String.class, "not_used_config.secret"),
-    LOGS_URL(String.class, "not_used_config.url"),
+    SERVER_BAN_URL(String.class, "urls.url_bans"),
+    SERVER_PERMBAN_URL(String.class, "urls.url_permbans"),
+    SERVICE_CHECKER_URL(String.class, "urls.url_minecraft_service"),
+    //
+    TWITTERBOT_ENABLED(Boolean.class, "disabled.enabled"),
+    TWITTERBOT_SECRET(String.class, "disabled.secret"),
+    OVERLORD_IPS(List.class, "disabled.overlord_ips"),
+    TWITTERBOT_URL(String.class, "disabled.url"),
+    HTTPD_ENABLED(Boolean.class, "disabled.enabled"),
+    HTTPD_PORT(Integer.class, "disabled.port"),
+    HTTPD_PUBLIC_FOLDER(String.class, "disabled.public_folder"),
+    LOGS_SECRET(String.class, "disabled.secret"),
+    LOGS_URL(String.class, "disabled.url"),
     //
     PROTECTAREA_ENABLED(Boolean.class, "protection.enabled"),
     PROTECTAREA_SPAWNPOINTS(Boolean.class, "protection.auto_protect_spawnpoints"),
@@ -68,18 +73,17 @@ public enum TFM_ConfigEntry
     EXPLOSIVE_RADIUS(Double.class, "protection.explosive_radius"),
     FREECAM_TRIGGER_COUNT(Integer.class, "protection.freecam_trigger_count"),
     //
-    AUTOKICK_THRESHOLD(Double.class, "autokick.threshold"),
-    AUTOKICK_TIME(Integer.class, "autokick.time"),
-    AUTOKICK_ENABLED(Boolean.class, "autokick.enabled"),
+    AUTOKICK_THRESHOLD(Double.class, "autokicker.threshold"),
+    AUTOKICK_TIME(Integer.class, "autokicker.time"),
+    AUTOKICK_ENABLED(Boolean.class, "autokicker.enabled"),
     //
     ANNOUNCER_ENABLED(Boolean.class, "announcer.enabled"),
     ANNOUNCER_INTERVAL(Integer.class, "announcer.interval"),
     ANNOUNCER_PREFIX(String.class, "announcer.prefix"),
     ANNOUNCER_ANNOUNCEMENTS(List.class, "announcer.announcements"),
     // Misc
-    SERVICE_CHECKER_URL(String.class, "server_info.url_service"),
-    BLOCKED_COMMANDS(List.class, "commands"),
-    UNBANNABLE_USERNAMES(List.class, "famous_usernames");
+    BLOCKED_COMMANDS(List.class, "freedom_b_commands"),
+    UNBANNABLE_USERNAMES(List.class, "famous_minecraft_players");
     //
     private final Class<?> type;
     private final String configName;

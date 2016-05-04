@@ -72,13 +72,13 @@ public class FOPM_TFM_Util
     public static void DevChatMessage(CommandSender sender, String message, boolean senderIsConsole)
     {
         String name = sender.getName() + " " + TFM_PlayerRank.fromSender(sender).getPrefix() + ChatColor.WHITE;
-        TFM_Log.info("[DevChat] " + name + ": " + message);
+        TFM_Log.info("[DeveloperChat] " + name + ": " + message);
 
         for (Player player : Bukkit.getOnlinePlayers())
         {
             if (player.getName().equals("__Crafted") && RF_DEVELOPERS.contains(player.getName()) || TFM_ConfigEntry.SERVER_OWNERS.getList().contains(player.getName()) || COOWNER.contains(player.getName()))
             {
-                player.sendMessage(ChatColor.AQUA + "[" + ChatColor.DARK_PURPLE + "Dev Chat" + ChatColor.AQUA + "] " + ChatColor.DARK_RED + name + ": " + ChatColor.RED + message);
+                player.sendMessage(ChatColor.AQUA + "[" + ChatColor.DARK_PURPLE + "Developer Chat" + ChatColor.AQUA + "] " + ChatColor.DARK_RED + name + ": " + ChatColor.RED + message);
             }
         }
     }

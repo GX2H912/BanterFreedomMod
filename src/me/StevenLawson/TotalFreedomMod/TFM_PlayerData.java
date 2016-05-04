@@ -419,7 +419,7 @@ public class TFM_PlayerData
             @Override
             public void run()
             {
-                TFM_Util.adminAction("TotalFreedom", "Unmuting " + player.getName(), false);
+                TFM_Util.adminAction("BanterFreedom-Remastered", "Unmuting " + player.getName(), false);
                 setMuted(false);
             }
         }.runTaskLater(TotalFreedomMod.plugin, AUTO_PURGE);
@@ -501,9 +501,9 @@ public class TFM_PlayerData
         return this.inSeniorAdminchat;
     }
 
-    public void setDevChat(boolean inDevchat)
+    public void setDevChat(boolean devchat)
     {
-        this.inDevchat = inDevchat;
+        this.inDevchat = devchat;
     }
 
     public boolean inDevChat()

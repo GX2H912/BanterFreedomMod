@@ -160,7 +160,7 @@ public class TFM_ServerInterface
 
             if (count >= server.getMaxPlayers())
             {
-                event.disallow(Result.KICK_OTHER, "RubyFreedom is full and a player could not be kicked, sorry!");
+                event.disallow(Result.KICK_OTHER, " BanterFreedom is full and a player could not be kicked, sorry!");
                 return;
             }
 
@@ -171,14 +171,14 @@ public class TFM_ServerInterface
         // Server full check
         if (server.getOnlinePlayers().size() >= server.getMaxPlayers())
         {
-            event.disallow(Result.KICK_FULL, "Sorry, but RubyFreedom is full.");
+            event.disallow(Result.KICK_FULL, "Sorry, but BanterFreedom is full.");
             return;
         }
 
         // Admin-only mode
         if (TFM_ConfigEntry.ADMIN_ONLY_MODE.getBoolean())
         {
-            event.disallow(Result.KICK_OTHER, "RubyFreedom is temporarily open to admins only.");
+            event.disallow(Result.KICK_OTHER, "BanterFreedom is temporarily open to admins only.");
             return;
         }
 
@@ -192,7 +192,7 @@ public class TFM_ServerInterface
         // Lockdown mode
         if (TotalFreedomMod.lockdownEnabled)
         {
-            event.disallow(Result.KICK_OTHER, "RubyFreedom is currently in lockdown mode.");
+            event.disallow(Result.KICK_OTHER, "BanterFreedom is currently in lockdown mode.");
             return;
         }
 
@@ -201,7 +201,7 @@ public class TFM_ServerInterface
         {
             if (!getWhitelisted().contains(username.toLowerCase()))
             {
-                event.disallow(Result.KICK_OTHER, "You are not whitelisted on this server!");
+                event.disallow(Result.KICK_OTHER, "You are not whitelisted on BanterFreedom!");
                 return;
             }
         }
@@ -248,7 +248,7 @@ public class TFM_ServerInterface
             if (TFM_Util.fuzzyIpMatch(testIp, ip, 4))
             {
                 event.disallow(Result.KICK_OTHER,
-                        ChatColor.RED + "Your IP address is permanently banned from this server.\n"
+                        ChatColor.RED + "Your IP address is permanently banned from BanterFreedom you fuck.\n"
                         + "Release procedures are available at\n"
                         + ChatColor.GOLD + TFM_ConfigEntry.SERVER_PERMBAN_URL.getString());
                 return;
@@ -261,7 +261,7 @@ public class TFM_ServerInterface
             if (testPlayer.equalsIgnoreCase(username))
             {
                 event.disallow(Result.KICK_OTHER,
-                        ChatColor.RED + "Your username is permanently banned from this server.\n"
+                        ChatColor.RED + "Your username is permanently banned from BanterFreedom you fuck.\n"
                         + "Release procedures are available at\n"
                         + ChatColor.GOLD + TFM_ConfigEntry.SERVER_PERMBAN_URL.getString());
                 return;
