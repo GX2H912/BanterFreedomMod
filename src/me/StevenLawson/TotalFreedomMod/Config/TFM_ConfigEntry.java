@@ -36,7 +36,7 @@ public enum TFM_ConfigEntry
     ENABLE_PET_PROTECT(Boolean.class, "mobs.pets_enabled"),
     //
     SERVER_OWNERS(List.class, "admins.banterfreedom_owner"),
-    TELNET_MULTI_ADMIN(List.class, "admins.telnet_multi_admins"),
+    MULTI(List.class, "admins.specialist"),
     NOADMIN_IPS(List.class, "admins.noadmin_ips"),
     ADMIN_ONLY_MODE(Boolean.class, "admins.admin_only_mode"),
     CONSOLE_IS_SENIOR(Boolean.class, "admins.console_is_senior"),

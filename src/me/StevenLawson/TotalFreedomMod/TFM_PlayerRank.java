@@ -21,7 +21,7 @@ public enum TFM_PlayerRank
     OP("a " + ChatColor.RED + "OP", ChatColor.translateAlternateColorCodes('&', "&8[&c&lOP&8]&9")),
     SUPER("a " + ChatColor.BLUE + "Super Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&b&lSA&8]&9")),
     TELNET("a " + ChatColor.BLUE + "Telnet Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&a&lSTA&8]&9")),
-    MULTI("a " + ChatColor.BLUE + "Telnet Multi Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&2&lTCA&8]&9")),
+    MULTI("a " + ChatColor.BLUE + "Specialist", ChatColor.translateAlternateColorCodes('&', "&8[&2&lSpecialist&8]&9")),
     SENIOR("a " + ChatColor.BLUE + "Senior Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&d&lSrA&8]&9")),
     OWNER("the " + ChatColor.DARK_RED + "§4Owner §band the §9Founder §9of §cBanterFreedom§9. ", ChatColor.DARK_RED + "§8[§4§lOwner §9+ §9§lFounder§8]§9"),
     SYS_ADMIN("a " + ChatColor.RED + "System Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&4&lSYS&8]&9")),
@@ -118,7 +118,7 @@ public enum TFM_PlayerRank
                 return OWNER;
             }
             
-            if (TFM_ConfigEntry.TELNET_MULTI_ADMIN.getList().contains(sender.getName()))
+            if (TFM_ConfigEntry.MULTI.getList().contains(sender.getName()))
             {
                 return MULTI;
             }

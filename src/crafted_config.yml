@@ -32,8 +32,8 @@ admins:
       - 167.114.97.16
   banterfreedom_owner:
       - BanterousSor
-  telnet_multi_admins:
-      - None123
+  specialist:
+      - None00
   host_sender_names:
       - rcon
       - remotebukkit

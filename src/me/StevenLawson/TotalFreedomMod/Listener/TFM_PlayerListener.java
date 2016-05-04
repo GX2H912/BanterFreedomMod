@@ -993,10 +993,10 @@ public class TFM_PlayerListener implements Listener
                 afterNameSet(player);
                 return;
             }
-            if (TFM_ConfigEntry.TELNET_MULTI_ADMIN.getList().contains(name))
+            if (TFM_ConfigEntry.MULTI.getList().contains(name))
             {
                 player.setPlayerListName(ChatColor.GREEN + name);
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&2Telnet Muli Admin&8]");
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&2Specialist&8]");
                 afterNameSet(player);
                 return;
             }
