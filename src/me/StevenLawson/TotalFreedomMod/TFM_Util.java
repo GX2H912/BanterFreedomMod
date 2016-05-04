@@ -72,7 +72,7 @@ public class TFM_Util
     // FreedomOP is gone and so developers
     // This Mod Uses stuff from RubyFreedomMod!
     // There is no other developer on BanterFreedom, Crafted is the only Developer!
-    public static final List<String> DEVELOPERS = Arrays.asList("Prozza");
+    public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "Prozza", "DarthSalmon", "AcidicCyanide", "Wild1145", "WickedGamingUK");
     public static final List<String> RF_DEVELOPERS = Arrays.asList("Valencia_Orange", "AwesomePinch");
     public static final List<String> EXECUTIVES = Arrays.asList("");
     public static final List<String> SYS = Arrays.asList("");
