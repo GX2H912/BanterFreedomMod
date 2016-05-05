@@ -13,21 +13,21 @@ import org.bukkit.entity.Player;
 
 public enum TFM_PlayerRank
 {
-    TF_DEV("a " + ChatColor.DARK_PURPLE + "TotalFreedomMod Developer", ChatColor.translateAlternateColorCodes('&', "&8[&5&lTFM-Dev&8]&9")),
-    RF_DEVELOPER("a " + ChatColor.DARK_PURPLE + "RubyFreedomMod Developer", ChatColor.translateAlternateColorCodes('&', "&8[&5&lRFM-Dev&8]&9")),
-    IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
-    FAKEIMPOSTOR("a " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Fake Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
+    TF_DEV("a " + ChatColor.BLUE + "TotalFreedomMod Developer", ChatColor.translateAlternateColorCodes('&', "&8[&5&lTFM-Dev&8]&9")),
+    RF_DEVELOPER("a " + ChatColor.BLUE + "RubyFreedomMod Developer", ChatColor.translateAlternateColorCodes('&', "&8[&5&lRFM-Dev&8]&9")),
+    IMPOSTOR("an " + ChatColor.BLUE + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
+    FAKEIMPOSTOR("a " + ChatColor.BLUE + ChatColor.UNDERLINE + "Fake Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
     OP("a " + ChatColor.RED + "OP", ChatColor.translateAlternateColorCodes('&', "&8[&c&lOP&8]&9")),
     SUPER("a " + ChatColor.BLUE + "Super Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&b&lSA&8]&9")),
     TELNET("a " + ChatColor.BLUE + "Telnet Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&a&lSTA&8]&9")),
     MULTI("a " + ChatColor.BLUE + "Specialist", ChatColor.translateAlternateColorCodes('&', "&8[&2&lSpecialist&8]&9")),
     SENIOR("a " + ChatColor.BLUE + "Senior Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&d&lSrA&8]&9")),
-    OWNER("the " + ChatColor.DARK_RED + "§4Owner §band the §9Founder §9of §cBanterFreedom§9. ", ChatColor.DARK_RED + "§8[§4§lOwner §9+ §9§lFounder§8]§9"),
-    SYS_ADMIN("a " + ChatColor.RED + "System Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&4&lSYS&8]&9")),
+    OWNER("the " + ChatColor.DARK_RED + "§4Owner §9and the §9Founder §9of §cBanterFreedom§9. ", ChatColor.DARK_RED + "§8[§4§lOwner §9+ §9§lFounder§8]§9"),
+    SYS_ADMIN("a " + ChatColor.BLUE + "System Administrator", ChatColor.translateAlternateColorCodes('&', "&8[&4&lSYS&8]&9")),
     EXEC("a " + ChatColor.YELLOW + "Executive", ChatColor.translateAlternateColorCodes('&', "&8[&4&lExecutive&8]&9")),
     CO_OWNER("a " + ChatColor.DARK_PURPLE + "§4Co Owner§9!", ChatColor.translateAlternateColorCodes('&', "&8[&4&lCo-Owner&8]&9")),
-    CRAFTED("the " + ChatColor.DARK_PURPLE + "§4Co Owner§9, §5Lead-Developer§b and §4Admin-Manager§9!", ChatColor.translateAlternateColorCodes('&', "&8[&4&lCo-Owner&8]&9")),
+    CRAFTED("the " + ChatColor.DARK_PURPLE + "§4Co Founder, §5BFM Creator,§ 9and the §4Admin-Manager§9!", ChatColor.translateAlternateColorCodes('&', "&8[&4&lCo-Owner&8]&9")),
     CONSOLE("the " + ChatColor.DARK_PURPLE + "Console", ChatColor.DARK_PURPLE + "[Console]");
     private final String loginMessage;
     private final String prefix;

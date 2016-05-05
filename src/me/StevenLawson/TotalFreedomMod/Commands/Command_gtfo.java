@@ -16,7 +16,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.SUPER, source = SourceType.BOTH)
-@CommandParameters(description = "(deop and ip ban by username).", usage = "/<command> <partialname>", aliases = "ban")
+@CommandParameters(description = "(deop and ip ban by username).", usage = "/<command> <partialname>")
 public class Command_gtfo extends TFM_Command
 {
     @Override

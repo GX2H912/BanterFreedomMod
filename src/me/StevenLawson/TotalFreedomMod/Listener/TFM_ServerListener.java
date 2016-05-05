@@ -19,7 +19,7 @@ public class TFM_ServerListener implements Listener {
         final String ip = event.getAddress().getHostAddress();
 
         if (TFM_BanManager.isIpBanned(ip)) {
-            event.setMotd(ChatColor.RED + "You are banned.");
+            event.setMotd(ChatColor.RED + "Your banned now fuck off.");
             return;
         }
 
@@ -51,7 +51,7 @@ public class TFM_ServerListener implements Listener {
             motd.append(TFM_Util.randomChatColor()).append(word).append(" ");
         }
 
-        String message = String.format("Minecraft v1.9%s!", FOPM_TFM_Util.getPlayerFromIp(ip));
+        String message = String.format("Minecraft v1.9%s", FOPM_TFM_Util.getPlayerFromIp(ip));
 
         event.setMotd(TFM_Util.colorize(motd.toString()) + "\n" + message);
     }
