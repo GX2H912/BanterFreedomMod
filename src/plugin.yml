@@ -10,5 +10,5 @@ main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
 version: Remastered
 description: Plugin for a FreedomServer!
 softdepend: [BukkitTelnet, WorldEdit, Essentials, BarAPI, Spigot, Votifier]
-authors: [TFM_DEV, FOP_DEV, RF_DEV, BF_DEV, __Crafted]
+authors: [Prozza, Madgeek1450, __Crafted]
 
